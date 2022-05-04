@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="register.css">
+  <script>
+    secretCode = () => {
+      document.getElementById("secretcode").style.visibility = "visible";
+    }
+    secretCodeDisappear = () => {
+      document.getElementById("secretcode").style.visibility = "hidden";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="logo">
+    <img src="images\bgimage.jpg" alt="LibraryZ">
+  </div>
+  <div class="App">
+    <section>
+      <nav class="header">
+        <ul>
+          <li>
+
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./Login.html">Login</a>
+          </li>
+          <li>
+            <a href="./Register.html">Register</a>
+          </li>
+        </ul>
+
+      </nav>
+    </section>
+    <section>
+      <div class="register">
+        <form action="http://localhost/AbsoluteMinds\PHP\registration.php"
+          method="post" class="base-container">
+
+          <div class="content">
+            <div class="image">
+              <img src="./images/absminds.gif" alt="logo" class="image">
+
+            </div>
+            <div class="register">Register</div>
+            <div class="form">
+
+              <div class="form-group">
+                <label htmlFor="username">Username</label>
+                <input type="text" name="username" placeholder="username" id="username" />
+              </div>
+              <div class="form-group" id="email">
+                <label htmlFor="email">Email</label>
+                <input type="email" id='email' name="email" placeholder="abc@example.com" required>
+              </div>
+              <div class="form-group">
+                <label htmlFor="password">Password</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <div class="form-group">
+                <label htmlFor="Confirm Password" id="confirm">Confirm password</label>
+                <input type="password" id="cname" name="cname" required>
+              </div>
+              <div class="select">
+                <label htmlFor="type"> <b>Please Select</b> </label> <br />
+                <input type="radio" name="Librarian" value="librarian" onclick="secretCode()" />Librarian <br />
+                <input type="radio" name="Librarian" value="student" onclick="secretCodeDisappear()" />Student
+
+              </div>
+              <div id="secretcode">
+                <label htmlFor="secretCode">Secret Code</label>
+                <input type="text" id="Code" name="Code" placeholder="Enter secret Code" />
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <button type="reset" class="btn">Reset</button>
+            &nbsp;
+            <button type="submit" name="submit" value="submit" class="btn">Register</button>
+
+
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>
+      Copyright &copy; www.libraryZ.com. All rights reserved!
+    </div>
+  </footer>
+
+</body>
+
+</html>
