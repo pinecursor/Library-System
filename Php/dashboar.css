@@ -1,0 +1,37 @@
+body{
+    background-color: lightpink;
+}
+.books{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   
+}
+.books > .card{
+    margin-left: 40px;
+
+}
+.Input-Book{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Input-Book > .card{
+    width: 500px;
+}
+.Book-details{
+    margin: 20px 20px 20px 20px;
+    background-color: aqua;
+}
+.small{
+    color: aliceblue;
+}
+.logged-in{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Input-Book-Student{
+    margin-left: 500px;
+
+}
